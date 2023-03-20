@@ -1,0 +1,40 @@
+.submit-btn {
+  width: fit-content;
+  height: fit-content;
+
+  &__button {
+    cursor: pointer;
+
+    width: 100%;
+    padding: 8px 24px;
+
+    background-color: var(--color-button-submit);
+
+    border: none;
+    border-radius: 6px;
+
+    text-align: center;
+    color: var(--color-button-text);
+    font-size: var(--fs-small);
+    font-weight: 500;
+
+    &:hover {
+      opacity: 0.95;
+    }
+
+    &:active {
+      opacity: 0.9;
+    }
+  }
+}
+
+.submit-btn-big {
+  .submit-btn__button {
+    padding: 12px 32px;
+    font-size: var(--fs-med);
+  }
+}
+
+.submit-btn-full-width {
+  width: 100%;
+}

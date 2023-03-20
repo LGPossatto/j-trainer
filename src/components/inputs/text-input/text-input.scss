@@ -1,0 +1,47 @@
+.text-input {
+  width: 100%;
+
+  &__label {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: var(--fs-smaller);
+    font-weight: 500;
+  }
+
+  &__input {
+    outline: none;
+
+    width: 100%;
+    padding: 4px 12px;
+
+    border: 1px solid var(--color-lines);
+    border-radius: 4px;
+
+    background-color: var(--color-background);
+
+    font-size: var(--fs-small);
+
+    &:hover {
+      border-color: var(--color-lines-hover);
+    }
+
+    &:focus {
+      border-color: var(--color-lines-focus);
+    }
+  }
+
+  &__error {
+    display: block;
+
+    padding-top: 2px;
+
+    color: var(--color-danger);
+    font-size: var(--fs-smaller);
+    font-weight: 500;
+  }
+}
+
+.text-input-error {
+  border-color: var(--color-danger);
+}

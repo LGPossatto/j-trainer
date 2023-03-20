@@ -1,0 +1,22 @@
+@mixin cssColors {
+  --color-background: #f1f2f3;
+  --color-text: #151515;
+
+  --color-lines: #8d99ae;
+  --color-lines-focus: #2b2d42;
+  --color-lines-hover: #606483;
+
+  --color-button: #023fa8;
+  --color-button-submit: #ef233c;
+  --color-button-text: #f1f2f3;
+
+  --color-success: #12d188;
+  --color-alert: #ddbe0b;
+  --color-danger: #e41e6a;
+
+  --test1: #2b2d42;
+  --test2: #8d99ae;
+  --test3: #edf2f4;
+  --test4: #ef233c;
+  --test5: #d90429;
+}

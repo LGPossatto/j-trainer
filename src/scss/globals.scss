@@ -1,0 +1,89 @@
+@import "./_sass/breakpoints";
+@import "./_sass/colors";
+@import "./_sass/font-size";
+
+:root {
+  @include cssColors();
+  @include cssFontSize();
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  letter-spacing: 0.05em;
+
+  padding: 0;
+  margin: 0;
+
+  font-family: "Roboto", sans-serif;
+  color: var(--color-text);
+}
+
+html {
+  overflow-x: hidden;
+
+  background-color: var(--color-background);
+
+  font-size: 62.5%;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  all: unset;
+  text-decoration: none;
+}
+
+h1 {
+  font-size: var(--fs-biggest);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: var(--fs-bigger);
+  font-weight: 700;
+}
+
+h3 {
+  font-size: var(--fs-big);
+  font-weight: 700;
+}
+
+h4 {
+  font-size: var(--fs-med);
+  font-weight: 500;
+}
+
+h5 {
+  font-size: var(--fs-small);
+  font-weight: 500;
+}
+
+h6 {
+  font-size: var(--fs-smaller);
+  font-weight: 500;
+}
+
+p {
+  font-size: var(--fs-small);
+  font-weight: 400;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100vh;
+
+  > div {
+    width: 500px;
+    padding: 10px;
+    margin: 20px;
+    border: 2px solid;
+    background-color: gainsboro;
+  }
+}

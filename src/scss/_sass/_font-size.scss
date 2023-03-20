@@ -1,0 +1,21 @@
+@import "./breakpoints";
+
+@mixin cssFontSize {
+  --fs-biggest: 3.2rem;
+  --fs-bigger: 2.8rem;
+  --fs-big: 2.4rem;
+  --fs-med: 2rem;
+  --fs-small: 1.6rem;
+  --fs-smaller: 1.4rem;
+  --fs-smallest: 1.2rem;
+
+  @include bp-tablet {
+    --fs-biggest: 3rem;
+    --fs-bigger: 2.6rem;
+    --fs-big: 2.2rem;
+    --fs-med: 1.8rem;
+    --fs-small: 1.4rem;
+    --fs-smaller: 1.2rem;
+    --fs-smallest: 1rem;
+  }
+}

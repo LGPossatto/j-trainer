@@ -1,0 +1,35 @@
+@mixin bp-big {
+  @media (max-width: 1600px) {
+    @content;
+  }
+}
+
+@mixin bp-med {
+  @media (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin bp-min-tablet {
+  @media (min-width: 811px) {
+    @content;
+  }
+}
+
+@mixin bp-tablet {
+  @media (max-width: 810px) {
+    @content;
+  }
+}
+
+@mixin bp-mobile {
+  @media (max-width: 480px) {
+    @content;
+  }
+}
